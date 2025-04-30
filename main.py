@@ -58,6 +58,9 @@ def main():
                 print("Invalid choice. Please enter a number between 0 and 10.")
         except ValueError:
             print("Please enter a valid number.")
+        except KeyboardInterrupt:
+            print("Exit with 0!!!!")
+            main()
         except Exception as e:
             print(f"An error occurred: {e}")
         
